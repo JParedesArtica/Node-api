@@ -20,3 +20,9 @@ app.get('/',(req,res)=>{
 app.get('/todos', (req,res)=>{
     res.status(200).json(todos)
 })
+
+app.post('/signup', (req,res)=>{
+    const user = req.body;
+    todos.push(user);
+    res.status(200).json(todos);
+})
